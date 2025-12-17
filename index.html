@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
+
         .float-animation {
             animation: float 3s ease-in-out infinite;
         }
+
         @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
+
         .gradient-animate {
             background-size: 200% 200%;
             animation: gradient 8s ease infinite;
         }
     </style>
 </head>
+
+<script>
+    function abrirSolicitud() {
+        event.preventDefault();
+        event.stopPropagation();
+        window.open('http://www.certificate.gob.sv', '_blank');
+    }
+</script>
+
 <body class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
     <!-- Header con gradiente animado -->
     <div class="gradient-animate bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-16 px-4">
@@ -39,16 +67,17 @@
 
     <!-- Contenido principal -->
     <div class="max-w-4xl mx-auto px-4 py-12">
-        
+
         <!-- Tarjeta de bienvenida -->
-        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12 transform hover:scale-105 transition-transform duration-300">
+        <div
+            class="bg-white rounded-2xl shadow-xl p-8 mb-12 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center mb-4">
                 <i class="fas fa-hand-sparkles text-4xl text-indigo-600 mr-4"></i>
                 <h2 class="text-3xl font-bold text-gray-800">¡Bienvenidos!</h2>
             </div>
             <p class="text-gray-700 text-lg leading-relaxed">
-                Es un placer darles la bienvenida al Curso Propedéutico 2025-2026. Esta es una etapa fundamental 
-                en su formación académica donde construiremos las bases para su éxito universitario. 
+                Es un placer darles la bienvenida al Curso Propedéutico 2025-2026. Esta es una etapa fundamental
+                en su formación académica donde construiremos las bases para su éxito universitario.
                 A continuación encontrarán todas las herramientas y recursos que utilizaremos durante el curso.
             </p>
         </div>
@@ -59,20 +88,24 @@
                 <i class="fas fa-tools text-indigo-600 mr-3"></i>
                 Herramientas del Curso
             </h2>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
-                
+
                 <!-- Botón 1 - Google Classroom -->
-                <a href="https://campus.univo.edu.sv/" target="_blank" class="group bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://campus.univo.edu.sv/" target="_blank"
+                    class="group bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
-                        <i class="fas fa-chalkboard-teacher text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <i
+                            class="fas fa-chalkboard-teacher text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">Campus Virtual</h3>
                         <p class="text-sm opacity-90">Campus virtual de la Universidad</p>
                     </div>
                 </a>
 
                 <!-- Botón 2 - Recursos -->
-                <a href="#" target="_blank" class="group bg-gradient-to-br from-orange-500 to-red-500 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://drive.google.com/drive/folders/1w2-PqanzE_uU3FZoBTM_Yxq9Ps7unXTE?usp=sharing"
+                    target="_blank"
+                    class="group bg-gradient-to-br from-orange-500 to-red-500 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
                         <i class="fas fa-folder-open text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">Recursos</h3>
@@ -87,13 +120,14 @@
         <div class="mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
                 <i class="fas fa-magic text-purple-600 mr-3"></i>
-                Herramientas IA & Diseño
+                Herramientas & IA
             </h2>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+
                 <!-- Canva -->
-                <a href="https://www.canva.com/" target="_blank" target="_blank" class="group bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://www.canva.com/" target="_blank" target="_blank"
+                    class="group bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
                         <i class="fas fa-palette text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">Canva</h3>
@@ -102,7 +136,8 @@
                 </a>
 
                 <!-- ChatGPT -->
-                <a href="https://chatgpt.com/" target="_blank" class="group bg-gradient-to-br from-emerald-400 to-teal-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://chatgpt.com/" target="_blank"
+                    class="group bg-gradient-to-br from-emerald-400 to-teal-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
                         <i class="fas fa-comments text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">ChatGPT</h3>
@@ -111,7 +146,8 @@
                 </a>
 
                 <!-- Gemini -->
-                <a href="https://gemini.google.com/app" target="_blank" class="group bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://gemini.google.com/app" target="_blank"
+                    class="group bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
                         <i class="fas fa-robot text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">Gemini</h3>
@@ -120,20 +156,80 @@
                 </a>
 
                 <!-- Gamma -->
-                <a href="https://gamma.app/es" target="_blank" class="group bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                <a href="https://gamma.app/es" target="_blank"
+                    class="group bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
                     <div class="text-white">
-                        <i class="fas fa-person-chalkboard text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <i
+                            class="fas fa-person-chalkboard text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
                         <h3 class="text-xl font-bold mb-2">Gamma</h3>
                         <p class="text-sm opacity-90">IA para presentaciones</p>
                     </div>
                 </a>
 
-                <!-- Google Sites -->
-                <a href="https://sites.google.com/" target="_blank" class="group bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+            </div>
+        </div>
+
+        <!-- Sección de Otras Herramientas -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-wrench text-gray-700 mr-3"></i>
+                Otras Herramientas
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Platzi -->
+                <a href="https://platzi.com/" target="_blank"
+                    class="group bg-gradient-to-br from-green-600 to-emerald-700 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300 block">
                     <div class="text-white">
-                        <i class="fas fa-globe text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
-                        <h3 class="text-xl font-bold mb-2">Google Sites</h3>
-                        <p class="text-sm opacity-90">Creador de sitios web</p>
+                        <i class="fas fa-laptop-code text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Platzi</h3>
+                        <p class="text-sm opacity-90 mb-3">Plataforma de cursos online</p>
+                        <button onclick="abrirSolicitud()" 
+                                class="text-xs bg-white text-green-700 px-3 py-1 rounded-full font-semibold hover:bg-green-100 transition-colors">
+                            📝 Solicitar Cuenta
+                        </button>
+                    </div>
+                </a>
+
+                <!-- iLovePDF -->
+                <a href="https://www.ilovepdf.com/es" target="_blank"
+                    class="group bg-gradient-to-br from-red-500 to-rose-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                    <div class="text-white">
+                        <i class="fas fa-file-pdf text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">iLovePDF</h3>
+                        <p class="text-sm opacity-90">Editor y conversor de PDF</p>
+                    </div>
+                </a>
+
+
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.com/" target="_blank"
+                    class="group bg-gradient-to-br from-blue-600 to-sky-700 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                    <div class="text-white">
+                        <i class="fas fa-book-open text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Google Scholar</h3>
+                        <p class="text-sm opacity-90">Buscador académico</p>
+                    </div>
+                </a>
+
+                <!-- Mockaroo -->
+                <a href="https://www.mockaroo.com/" target="_blank"
+                    class="group bg-gradient-to-br from-gray-600 to-slate-700 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                    <div class="text-white">
+                        <i class="fas fa-database text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Mockaroo</h3>
+                        <p class="text-sm opacity-90">Generador de datos de prueba</p>
+                    </div>
+                </a>
+
+                <!-- Draw.io -->
+                <a href="https://www.drawio.com/" target="_blank"
+                    class="group bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl shadow-lg p-6 transform hover:scale-110 hover:shadow-2xl transition-all duration-300">
+                    <div class="text-white">
+                        <i class="fas fa-project-diagram text-5xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Draw.io</h3>
+                        <p class="text-sm opacity-90">Creador de diagramas</p>
                     </div>
                 </a>
 
@@ -141,11 +237,35 @@
         </div>
 
         <!-- Footer decorativo -->
-        <div class="text-center text-gray-600 mt-16 pb-8">
+        <div class="text-center text-gray-600 mt-16">
             <i class="fas fa-heart text-red-500 text-2xl mb-2"></i>
-            <p class="text-lg">¡Mucho éxito en este nuevo camino académico!</p>
+            <p class="text-lg mb-6">¡Mucho éxito en este nuevo camino académico!</p>
+
+            <!-- Redes Sociales -->
+            <div class="flex justify-center items-center gap-4 mt-6">
+                <p class="text-gray-700 font-semibold mr-2">Síguenos:</p>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/univosm/" target="_blank"
+                    class="group bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 rounded-full p-3 transform hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <i class="fab fa-instagram text-white text-2xl group-hover:rotate-12 transition-transform"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/UNIVOSM/" target="_blank"
+                    class="group bg-blue-600 rounded-full p-3 transform hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <i class="fab fa-facebook-f text-white text-2xl group-hover:rotate-12 transition-transform"></i>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@univosm" target="_blank"
+                    class="group bg-black rounded-full p-3 transform hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <i class="fab fa-tiktok text-white text-2xl group-hover:rotate-12 transition-transform"></i>
+                </a>
+            </div>
         </div>
 
     </div>
 </body>
+
 </html>
